@@ -8,8 +8,8 @@ import { ContactSection } from '@/views/contact-section'
 // (handles are normalized by stripping the leading '@').
 const EXPECTED_URLS: Record<(typeof CONTACT_LINKS)[number]['platform'], string> = {
   Twitter: 'https://twitter.com/0xPlayerOne',
-  GitHub: 'https://github.com/0xPlayerOne',
-  LinkedIn: 'https://linkedin.com/in/AMahoneyFernandes',
+  GitHub: 'https://github.com/AndrewM-F',
+  LinkedIn: 'https://www.linkedin.com/in/andrewm-f',
 }
 
 describe('ContactSection', () => {

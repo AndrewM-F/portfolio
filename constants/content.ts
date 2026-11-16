@@ -151,8 +151,8 @@ export const GAME_CREDITS = [
 
 export const CONTACT_LINKS = [
   { platform: 'Twitter', handle: '@0xPlayerOne' },
-  { platform: 'GitHub', handle: '@0xPlayerOne' },
-  { platform: 'LinkedIn', handle: '@AMahoneyFernandes' },
+  { platform: 'GitHub', handle: '@AndrewM-F' },
+  { platform: 'LinkedIn', handle: '@andrewm-f' },
 ] as const
 
 export const CONTACT_CONTENT = {

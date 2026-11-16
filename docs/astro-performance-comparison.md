@@ -5,7 +5,7 @@ Same-runner mobile navigation measurements for the portfolio migration.
 **Date:** 2026-09-08
 **Baseline:** `a3c43a0abe578513b338ea253c167c9776e89b13` (Next.js/OpenNext)
 **Candidate:** `14c3ef7c95ca8f6b12375e6b3ffd98cda9d220d7` (Astro)
-**Evidence:** [GitHub Actions run 34289445529](https://github.com/0xPlayerOne/v0-portfolio/actions/runs/34289445529), artifact `astro-migration-validation`
+**Evidence:** [GitHub Actions run 34289445529](https://github.com/AndrewM-F/v0-portfolio/actions/runs/34289445529), artifact `astro-migration-validation`
 
 ## Method
 

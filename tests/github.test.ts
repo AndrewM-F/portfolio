@@ -48,7 +48,7 @@ describe('GitHub project loading', () => {
           })
         )
       }
-      if (url.includes('/users/0xPlayerOne/repos')) {
+      if (url.includes('/users/AndrewM-F/repos')) {
         return jsonResponse([
           githubRepo('popular-tool', { stargazers_count: 10 }),
           githubRepo('fork-example'),
@@ -85,7 +85,7 @@ describe('GitHub project loading', () => {
     const fetchMock = mock(async (input: string | URL | Request) => {
       const url = String(input)
 
-      if (url.includes('/users/0xPlayerOne/repos')) {
+      if (url.includes('/users/AndrewM-F/repos')) {
         throw new Error('offline')
       }
       if (url.endsWith('/languages')) {
@@ -108,7 +108,7 @@ describe('GitHub project loading', () => {
       const url = String(input)
 
       if (url.endsWith('/languages')) return jsonResponse({}, 500)
-      if (url.includes('/users/0xPlayerOne/repos')) return jsonResponse([])
+      if (url.includes('/users/AndrewM-F/repos')) return jsonResponse([])
       if (url.includes('/repos/NiftyLeague/')) return jsonResponse({}, 503)
       return jsonResponse({}, 404)
     })
@@ -158,7 +158,7 @@ describe('GitHub project loading', () => {
     const fetchMock = mock(async (input: string | URL | Request) => {
       const url = String(input)
 
-      if (url.includes('/users/0xPlayerOne/repos')) {
+      if (url.includes('/users/AndrewM-F/repos')) {
         return jsonResponse([], 403)
       }
       if (url.endsWith('/repos/NiftyLeague/nifty-fe-monorepo')) {
@@ -192,7 +192,7 @@ describe('GitHub project loading', () => {
     const fetchMock = mock(async (input: string | URL | Request) => {
       const url = String(input)
 
-      if (url.includes('/users/0xPlayerOne/repos')) {
+      if (url.includes('/users/AndrewM-F/repos')) {
         return jsonResponse({ message: 'Server error' }, 500)
       }
       if (url.endsWith('/languages')) {
@@ -219,7 +219,7 @@ describe('GitHub project loading', () => {
     const fetchMock = mock(async (input: string | URL | Request) => {
       const url = String(input)
 
-      if (url.includes('/users/0xPlayerOne/repos')) {
+      if (url.includes('/users/AndrewM-F/repos')) {
         return jsonResponse(
           [
             githubRepo('alpha-tool', {
@@ -279,7 +279,7 @@ describe('GitHub project loading', () => {
     const fetchMock = mock(async (input: string | URL | Request) => {
       const url = String(input)
 
-      if (url.includes('/users/0xPlayerOne/repos')) {
+      if (url.includes('/users/AndrewM-F/repos')) {
         return jsonResponse(
           [
             githubRepo('unknown-project', {
@@ -313,7 +313,7 @@ describe('GitHub project loading', () => {
     const fetchMock = mock(async (input: string | URL | Request) => {
       const url = String(input)
 
-      if (url.includes('/users/0xPlayerOne/repos')) {
+      if (url.includes('/users/AndrewM-F/repos')) {
         return jsonResponse(
           [
             githubRepo('server-error-project', {
@@ -366,7 +366,7 @@ describe('GitHub project loading', () => {
       // Hold every request behind a gate so the test can observe which
       // requests were initiated before any of them resolved.
       await gate
-      if (url.includes('/users/0xPlayerOne/repos')) {
+      if (url.includes('/users/AndrewM-F/repos')) {
         return jsonResponse([githubRepo('other-repo', { description: 'An open project' })])
       }
       return jsonResponse(
@@ -382,7 +382,7 @@ describe('GitHub project loading', () => {
     await Promise.resolve()
 
     expect(requested.filter((u) => u.includes('/repos/NiftyLeague/'))).toHaveLength(2)
-    expect(requested.some((u) => u.includes('/users/0xPlayerOne/repos'))).toBe(true)
+    expect(requested.some((u) => u.includes('/users/AndrewM-F/repos'))).toBe(true)
 
     release()
     const projects = await pending

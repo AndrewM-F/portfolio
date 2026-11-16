@@ -1,8 +1,8 @@
 const SECURITY_TXT = [
   'Canonical: https://andrewmf.com/.well-known/security.txt',
-  'Contact: https://github.com/0xPlayerOne/v0-portfolio/security/advisories/new',
+  'Contact: https://github.com/AndrewM-F/v0-portfolio/security/advisories/new',
   'Expires: 2027-09-02T00:00:00Z',
-  'Policy: https://github.com/0xPlayerOne/v0-portfolio/security/policy',
+  'Policy: https://github.com/AndrewM-F/v0-portfolio/security/policy',
   'Preferred-Languages: en',
   '',
 ].join('\n')

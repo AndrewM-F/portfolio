@@ -18,7 +18,7 @@ const CONTACT_ICONS = {
 const CONTACT_URLS = {
   twitter: (handle: string) => `https://twitter.com/${handle.replace('@', '')}`,
   github: (handle: string) => `https://github.com/${handle.replace('@', '')}`,
-  linkedin: (handle: string) => `https://linkedin.com/in/${handle.replace('@', '')}`,
+  linkedin: (handle: string) => `https://www.linkedin.com/in/${handle.replace('@', '')}`,
 } as const
 
 function handleContactClick() {

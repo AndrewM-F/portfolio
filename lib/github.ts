@@ -108,7 +108,7 @@ async function fetchSpecificRepos(
 async function fetchPopularRepositories(): Promise<Omit<PinnedRepo, 'languages'>[]> {
   try {
     const response = await fetch(
-      'https://api.github.com/users/0xPlayerOne/repos?sort=stars&per_page=20',
+      'https://api.github.com/users/AndrewM-F/repos?sort=stars&per_page=20',
       { ...GITHUB_FETCH_OPTIONS, signal: AbortSignal.timeout(5000) }
     )
 
@@ -126,7 +126,7 @@ async function fetchPopularRepositories(): Promise<Omit<PinnedRepo, 'languages'>
     const popularRepos = repos
       .filter(
         (repo) =>
-          !repo.name.includes('0xPlayerOne') && // Exclude profile repo
+          !repo.name.includes('AndrewM-F') && // Exclude profile repo
           repo.description && // Must have description
           !repo.name.toLowerCase().includes('fork') // Exclude obvious forks
       )

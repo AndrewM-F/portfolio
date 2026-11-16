@@ -3,7 +3,7 @@ profile: application
 languages: typescript
 features: all
 package_manager: bun
-runtime_repository: 0xPlayerOne/code-foundry
+runtime_repository: AndrewM-F/code-foundry
 runtime_ref: v1.48.4
 runner: ubuntu-latest
 unit_runner: ubuntu-slim

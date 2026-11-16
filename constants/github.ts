@@ -53,7 +53,7 @@ export const FALLBACK_POPULAR_REPOS: PinnedRepo[] = [
     title: 'NowInStock Bot',
     description: 'Bot to alert you when watched items are available in stock.',
     tech: ['scripting', 'python'],
-    url: 'https://github.com/0xPlayerOne/NowInStock-bot',
+    url: 'https://github.com/AndrewM-F/NowInStock-bot',
     stars: 14,
     forks: 2,
     languages: [
@@ -66,7 +66,7 @@ export const FALLBACK_POPULAR_REPOS: PinnedRepo[] = [
     title: 'Binance Us Cryptobot',
     description: 'Terminal bot for auto trading on binance.us exchange.',
     tech: ['blockchain', 'ethereum', 'web3', 'utilities'],
-    url: 'https://github.com/0xPlayerOne/binance-us-cryptobot',
+    url: 'https://github.com/AndrewM-F/binance-us-cryptobot',
     stars: 13,
     forks: 1,
     languages: [
