@@ -12,7 +12,7 @@ permissions:
 jobs:
   production:
     name: Cloudflare Production / v0-portfolio
-    uses: AndrewM-F/code-foundry/.github/workflows/cloudflare-deploy.yml@v1.54.4
+    uses: AndrewM-F/code-foundry/.github/workflows/cloudflare-deploy.yml@v1.54.5
     with:
       mode: production
       deploy-tool: cf
@@ -21,6 +21,7 @@ jobs:
       build-script: cloudflare:build
       bun-version: 1.4.4
       environment: Production - v0-portfolio
+      force: true
     secrets:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
